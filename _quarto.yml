@@ -1,0 +1,43 @@
+project:
+  type: website
+
+date: today
+
+website:
+  title: "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>"
+  favicon: images/logo.png
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  repo-url: https://github.com/oxford-pharmacoepi/ohdsi-uk
+  repo-actions: [issue]
+  page-footer:
+    right: "Rendered on {{< meta date >}}"
+    left: "Copyright 2025, OHDSI-UK"
+  navbar:
+    search: false
+    left:
+      - text: New to ohdsi
+        href: new_to_ohdsi.qmd
+      - text: Data Partners
+        href: data_partners.qmd
+      - text: Events
+        href: events.qmd
+      - text: Tools
+        href: tools.qmd
+      - text: Resources
+        href: resources.qmd
+    right:
+      - text: Github
+        href: https://github.com/oxford-pharmacoepi
+        icon: github
+
+format:
+  html:
+    toc: true
+    #fontcolor: black
+    #linkcolor: blue
+    #backgroundcolor: black
+    #mainfont: Roboto
+    #monofont: to edit fonts
+    theme:
+      light: [flatly, styles.scss]
+      dark: [darkly, styles.scss]
