@@ -10,8 +10,11 @@ website:
   repo-url: https://github.com/oxford-pharmacoepi/ohdsi-uk
   repo-actions: [issue]
   page-footer:
-    right: "Rendered on {{< meta date >}}"
+    center: "Rendered on {{< meta date >}}"
     left: "Copyright 2025, OHDSI-UK"
+    right:
+      - text: Contributing
+        href: CONTRIBUTING.md
   navbar:
     search: false
     left:
