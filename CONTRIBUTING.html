@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-05-13">
 
-<title>events – &lt;img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'&gt;</title>
+<title>contributing – &lt;img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'&gt;</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,6 +111,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://oxford-pharmacoepi.github.io/ohdsi-uk/images/logo.png">
 <meta property="og:site_name" content="<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>">
 <meta property="og:image:alt" content="OHDSI UK logo">
@@ -270,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Data Partners</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./events.html" aria-current="page"> 
+    <a class="nav-link" href="./events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
@@ -300,8 +336,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#contributing-to-the-ohdsi-uk-website" id="toc-contributing-to-the-ohdsi-uk-website" class="nav-link active" data-scroll-target="#contributing-to-the-ohdsi-uk-website">Contributing to the OHDSI UK Website</a>
+  <ul class="collapse">
+  <li><a href="#project-setup" id="toc-project-setup" class="nav-link" data-scroll-target="#project-setup">🛠 Project Setup</a></li>
+  <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link" data-scroll-target="#how-to-contribute">🧾 How to Contribute</a>
+  <ul class="collapse">
+  <li><a href="#open-an-issue-recommended" id="toc-open-an-issue-recommended" class="nav-link" data-scroll-target="#open-an-issue-recommended">0. Open an Issue (Recommended)</a></li>
+  <li><a href="#clone-the-repository" id="toc-clone-the-repository" class="nav-link" data-scroll-target="#clone-the-repository">1. Clone the Repository</a></li>
+  <li><a href="#create-a-new-branch" id="toc-create-a-new-branch" class="nav-link" data-scroll-target="#create-a-new-branch">2. Create a New Branch</a></li>
+  <li><a href="#make-changes-preview-and-commit" id="toc-make-changes-preview-and-commit" class="nav-link" data-scroll-target="#make-changes-preview-and-commit">3. Make Changes, Preview, and Commit</a></li>
+  <li><a href="#push-your-changes-and-open-a-pull-request" id="toc-push-your-changes-and-open-a-pull-request" class="nav-link" data-scroll-target="#push-your-changes-and-open-a-pull-request">4. Push Your Changes and Open a Pull Request</a></li>
+  <li><a href="#request-a-review" id="toc-request-a-review" class="nav-link" data-scroll-target="#request-a-review">5. Request a Review</a></li>
+  </ul></li>
+  <li><a href="#website-deployment" id="toc-website-deployment" class="nav-link" data-scroll-target="#website-deployment">✅ Website Deployment</a></li>
+  <li><a href="#style-and-content-guidelines" id="toc-style-and-content-guidelines" class="nav-link" data-scroll-target="#style-and-content-guidelines">📄 Style and Content Guidelines</a></li>
+  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">🤝 Code of Conduct</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/oxford-pharmacoepi/ohdsi-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -331,8 +388,77 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="contributing-to-the-ohdsi-uk-website" class="level1">
+<h1>Contributing to the OHDSI UK Website</h1>
+<p>Thank you for your interest in contributing to the OHDSI UK website!</p>
+<p>This site is built using <a href="https://quarto.org/">Quarto</a> and automatically deployed via <a href="https://github.com/features/actions">GitHub Actions</a> to GitHub Pages.</p>
+<section id="project-setup" class="level2">
+<h2 class="anchored" data-anchor-id="project-setup">🛠 Project Setup</h2>
+<p>To contribute, you’ll need the following installed locally:</p>
+<ul>
+<li><a href="https://quarto.org/docs/get-started/">Quarto CLI</a></li>
+<li><a href="https://cran.r-project.org/">R</a></li>
+<li><a href="https://git-scm.com/">Git</a> or <a href="https://desktop.github.com">GitHub Desktop</a> for a user-friendly interface</li>
+</ul>
+<p>You can edit the code using any Integrated Development Environment that supports Quarto (e.g.&nbsp;RStudio, Positron, VS Code, or JupyterLab).<br>
+We recommend using <strong>RStudio</strong> as the repository includes a <code>.Rproj</code> file to simplify your workflow.</p>
+</section>
+<section id="how-to-contribute" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-contribute">🧾 How to Contribute</h2>
+<section id="open-an-issue-recommended" class="level3">
+<h3 class="anchored" data-anchor-id="open-an-issue-recommended">0. Open an Issue (Recommended)</h3>
+<p>Before starting, we encourage you to <a href="https://github.com/oxford-pharmacoepi/ohdsi-uk/issues">open an issue</a> to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project’s direction.</p>
+<p>While pull requests (PRs) are always welcome, we can’t guarantee that all will be accepted — starting a discussion increases the chances your work will be merged.</p>
+</section>
+<section id="clone-the-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-repository">1. Clone the Repository</h3>
+</section>
+<section id="create-a-new-branch" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-new-branch">2. Create a New Branch</h3>
+</section>
+<section id="make-changes-preview-and-commit" class="level3">
+<h3 class="anchored" data-anchor-id="make-changes-preview-and-commit">3. Make Changes, Preview, and Commit</h3>
+<p>After editing content or code, you can preview the website locally:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will start a live preview server where you can see your changes.</p>
+<p>Once you’re satisfied commit them to Github.</p>
+</section>
+<section id="push-your-changes-and-open-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="push-your-changes-and-open-a-pull-request">4. Push Your Changes and Open a Pull Request</h3>
+<p>Push your branch and open a <strong>Pull Request</strong> (PR).</p>
+<p>💡 If the GitHub Actions check fails and you’re unsure why, just leave a comment in the PR and a maintainer will assist.</p>
+</section>
+<section id="request-a-review" class="level3">
+<h3 class="anchored" data-anchor-id="request-a-review">5. Request a Review</h3>
+<p>Ask a maintainer to review your changes.</p>
+</section>
+</section>
+<section id="website-deployment" class="level2">
+<h2 class="anchored" data-anchor-id="website-deployment">✅ Website Deployment</h2>
+<p>You do <strong>not</strong> need to manually render or deploy the website.</p>
+<p>When changes are merged into the <code>main</code> branch:</p>
+<ul>
+<li>A GitHub Action renders the site using Quarto.</li>
+<li>The rendered output is automatically deployed to GitHub Pages.</li>
+</ul>
+</section>
+<section id="style-and-content-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="style-and-content-guidelines">📄 Style and Content Guidelines</h2>
+<ul>
+<li>Use <a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto Markdown syntax</a>.</li>
+<li>Keep filenames lowercase and use underscores (<code>_</code>) rather than spaces.</li>
+<li>Use relative links to other pages (e.g., <code>resources.qmd</code>, not absolute URLs).</li>
+<li>Place images in the <code>images/</code> folder and optimize them for web use.</li>
+</ul>
+</section>
+<section id="code-of-conduct" class="level2">
+<h2 class="anchored" data-anchor-id="code-of-conduct">🤝 Code of Conduct</h2>
+<p>Please be respectful and professional in your interactions. See our <a href="./CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a> for details.</p>
+<p>Thank you for contributing! 🎉</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -755,7 +881,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/oxford-pharmacoepi/ohdsi-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/oxford-pharmacoepi/ohdsi-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Rendered on May 13, 2025</p>
 </div>
