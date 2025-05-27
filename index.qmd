@@ -22,37 +22,26 @@ The aims of the UK national node include:
 
 Health Data Sciences Section, Botnar Research Centre, University of Oxford
 
-## Members / Data Partners 
+### Members and Data Partners 
 
-The not currently has several data partners you can find them in [Data Partners](data_partners.qmd).
+```{r, echo=FALSE, message=FALSE}
+x <- "https://docs.google.com/spreadsheets/d/1ojn50In5Knkcak5Dw-OO8dwzGQqHziBXkCLV-Q-US14/export?format=csv" |>
+  readr::read_csv(col_types = c(longitude = "c", latitude = "c")) |>
+  dplyr::select("data_partner_name", "longitude", "latitude") |>
+  dplyr::mutate(dplyr::across(c("longitude", "latitude"), \(x) as.numeric(gsub(",", ".", x))))
+```
 
-Akrivia Health
-Aridhia DRE
-Barts Health NHS Trust
-British Heart Foundation Data Science Centre
-Clinical Architecture Ltd
-Clinical Practice Research Datalink
-Connected Bradford
-DataLoch
-Edinburgh Cancer Centre
-GOSH
-Health Data Research UK
-King's College London
-Lancashire Teaching Hospitals NHS Foundation Trust
-Leeds Teaching Hospitals
-NICE
-Nottingham University Hospitals Trust
-Optimum Patient Care
-Queen Mary University of London
-UK National Neonatal Research Database
-University College London
-University College London Hospitals
-Health Informatics Centre
-University of Dundee
-University of Edinburgh
-University of Nottingham
-How to contribute?
+The node currently has `r nrow(x)` data partners, you can find more information about each one of them in [Data Partners](data_partners/index.qmd). See them located in this map:
 
-Any UK-based institution interested to join the UK OHDSI Node should get in touch with the coordinator: prietoalhambra@ohdsi.org
+```{r, echo=FALSE}
+x |>
+  dplyr::filter(!is.na(.data$latitude) & !is.na(.data$longitude)) |>
+  leaflet::leaflet() |>
+  leaflet::addTiles() |>
+  leaflet::setView(lng = -3, lat = 54.5, zoom = 5) |>
+  leaflet::addMarkers(lng = ~longitude, lat = ~latitude, popup = ~data_partner_name)
+```
 
+### How to contribute?
 
+Any UK-based institution interested to join the UK OHDSI Node should get in touch with the coordinator: [prietoalhambra@ohdsi.org](mailto:prietoalhambra@ohdsi.org)

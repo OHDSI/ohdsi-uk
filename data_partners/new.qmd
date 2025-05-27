@@ -1,0 +1,65 @@
+## New data partner
+
+Please provide the following needed information to display a new data partner:
+
+```{=html}
+<form id="partner-form">
+  <input type="hidden" id="action" name="action" value="new">
+
+  <label for="data_partner_name">Data Partner Name:*</label><br>
+  <input type="text" id="data_partner_name" name="data_partner_name" required><br><br>
+
+  <label for="acronym">Acronym (max 10 characters):</label><br>
+  <input type="text" id="acronym" name="acronym" maxlength="10"><br><br>
+
+  <label for="website">Website:*</label><br>
+  <input type="url" id="website" name="website" required><br><br>
+
+  <label for="contact">Contact Email:*</label><br>
+  <input type="email" id="contact" name="contact" required><br><br>
+
+  <label for="description">Description (max 800 characters):</label><br>
+  <textarea id="description" name="description" rows="5" maxlength="800" style="width: 100%;"></textarea><br><br>
+
+  <label for="latitude">Latitude and Longitude to display in the data partners map:</label><br>
+  <input type="number" id="latitude" name="latitude" step="any">
+  <input type="number" id="longitude" name="longitude" step="any">
+  <br><br>
+  * Compulsory
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!-- Confirmation message -->
+<p id="confirmation-message" style="color: green; font-weight: bold; display: none;">
+  ✔ Data submitted correctly, new data partner should appear on the website in the next 24 hours!
+</p>
+
+<script>
+  document.getElementById("partner-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://script.google.com/macros/s/AKfycbyP_NArs1NwZ5LOwjR0Y2-UmpcHAXF25eaBWJ5gXfYuHSsc213PK_kEBQRYpMvCkko/exec", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+      if (result.toLowerCase().includes("success")) {
+        document.getElementById("confirmation-message").style.display = "block";
+        form.reset();
+      } else {
+        document.getElementById("confirmation-message").style.display = "none";
+        alert("Something went wrong: " + result);
+      }
+    })
+    .catch(error => {
+      alert("Submission failed. Please try again.");
+      console.error("Error:", error);
+    });
+  });
+</script>
+```
