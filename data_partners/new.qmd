@@ -3,6 +3,67 @@
 Please provide the following needed information to display a new data partner:
 
 ```{=html}
+<style>
+  #partner-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  #partner-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  #partner-form input[type="text"],
+  #partner-form input[type="url"],
+  #partner-form input[type="email"],
+  #partner-form input[type="number"],
+  #partner-form textarea,
+  #partner-form select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  #partner-form input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #partner-form input[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+
+  #confirmation-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .form-note {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+</style>
+
 <form id="partner-form">
   <input type="hidden" id="action" name="action" value="new">
 
@@ -22,10 +83,12 @@ Please provide the following needed information to display a new data partner:
   <textarea id="description" name="description" rows="5" maxlength="800" style="width: 100%;"></textarea><br><br>
 
   <label for="latitude">Latitude and Longitude to display in the data partners map:</label><br>
-  <input type="number" id="latitude" name="latitude" step="any">
-  <input type="number" id="longitude" name="longitude" step="any">
+  <div style="display: flex; gap: 1rem;">
+    <input type="number" id="latitude" name="latitude" step="any" style="flex: 1;">
+    <input type="number" id="longitude" name="longitude" step="any" style="flex: 1;">
+  </div>
   <br><br>
-  * Compulsory
+  <div class="form-note">* Compulsory</div>
   <br><br>
   <input type="submit" value="Submit">
 </form>

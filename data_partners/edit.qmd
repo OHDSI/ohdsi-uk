@@ -1,7 +1,68 @@
 ## Edit data partner
 
 ```{=html}
-<form id="edit-partner-form">
+<style>
+  #partner-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  #partner-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  #partner-form input[type="text"],
+  #partner-form input[type="url"],
+  #partner-form input[type="email"],
+  #partner-form input[type="number"],
+  #partner-form textarea,
+  #partner-form select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  #partner-form input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #partner-form input[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+
+  #confirmation-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .form-note {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+</style>
+
+<form id="partner-form">
   <input type="hidden" id="action" name="action" value="edit">
   <input type="hidden" id="rowId" name="rowId">
 
@@ -26,10 +87,14 @@
   <textarea id="description" name="description" rows="5" maxlength="800" style="width: 100%;"></textarea><br><br>
 
   <label for="latitude">Latitude and Longitude:</label><br>
-  <input type="number" id="latitude" name="latitude" step="any">
-  <input type="number" id="longitude" name="longitude" step="any"><br><br>
+  <div style="display: flex; gap: 1rem;">
+    <input type="number" id="latitude" name="latitude" step="any" style="flex: 1;">
+    <input type="number" id="longitude" name="longitude" step="any" style="flex: 1;">
+  </div>
+  <br><br>
 
-  * Compulsory<br><br>
+  <div class="form-note">* Compulsory</div>
+  
   <input type="submit" value="Submit">
 </form>
 
@@ -39,7 +104,7 @@
 
 <script>
   const partnerSelect = document.getElementById("dp_select");
-  const form = document.getElementById("edit-partner-form");
+  const form = document.getElementById("partner-form");
 
   // Populate dropdown with partner names
   fetch("https://script.google.com/macros/s/AKfycbyP_NArs1NwZ5LOwjR0Y2-UmpcHAXF25eaBWJ5gXfYuHSsc213PK_kEBQRYpMvCkko/exec?getDataPartners=true")
