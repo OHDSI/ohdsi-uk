@@ -1,0 +1,5 @@
+## Resources
+
+- [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)
+
+- [Tidy R programming with databases: applications with the OMOP common data model](https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/)

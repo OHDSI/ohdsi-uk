@@ -1,0 +1,163 @@
+## Edit data partner
+
+```{=html}
+<style>
+  #partner-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  #partner-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  #partner-form input[type="text"],
+  #partner-form input[type="url"],
+  #partner-form input[type="email"],
+  #partner-form input[type="number"],
+  #partner-form textarea,
+  #partner-form select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  #partner-form input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #partner-form input[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+
+  #confirmation-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .form-note {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+</style>
+
+<form id="partner-form">
+  <input type="hidden" id="action" name="action" value="edit">
+  <input type="hidden" id="rowId" name="rowId">
+
+  <label for="dp_select">Select Data Partner to Edit:</label><br>
+  <select id="dp_select" required>
+    <option value="">-- Choose a Data Partner --</option>
+  </select><br><br>
+
+  <label for="data_partner_name">Name of Data Partner:</label><br>
+  <input type="text" id="data_partner_name" name="data_partner_name" required><br><br>
+
+  <label for="acronym">Acronym (max 10 characters):</label><br>
+  <input type="text" id="acronym" name="acronym" maxlength="10"><br><br>
+
+  <label for="website">Website:*</label><br>
+  <input type="url" id="website" name="website" required><br><br>
+
+  <label for="contact">Contact Email:*</label><br>
+  <input type="email" id="contact" name="contact" required><br><br>
+
+  <label for="description">Description (max 800 characters):</label><br>
+  <textarea id="description" name="description" rows="5" maxlength="800" style="width: 100%;"></textarea><br><br>
+
+  <label for="latitude">Latitude and Longitude:</label><br>
+  <div style="display: flex; gap: 1rem;">
+    <input type="number" id="latitude" name="latitude" step="any" style="flex: 1;">
+    <input type="number" id="longitude" name="longitude" step="any" style="flex: 1;">
+  </div>
+  <br><br>
+
+  <div class="form-note">* Compulsory</div>
+  
+  <input type="submit" value="Submit">
+</form>
+
+<p id="edit-confirmation-message" style="color: green; font-weight: bold; display: none;">
+  ✔ Data submitted correctly! Updated data partner should appear on the website in the next 24 hours.
+</p>
+
+<script>
+  const partnerSelect = document.getElementById("dp_select");
+  const form = document.getElementById("partner-form");
+
+  // Populate dropdown with partner names
+  fetch("https://script.google.com/macros/s/AKfycbyP_NArs1NwZ5LOwjR0Y2-UmpcHAXF25eaBWJ5gXfYuHSsc213PK_kEBQRYpMvCkko/exec?getDataPartners=true")
+    .then(res => res.json())
+    .then(data => {
+      data.forEach(dp => {
+        const opt = document.createElement("option");
+        opt.value = dp.id;
+        opt.textContent = dp.name;
+        partnerSelect.appendChild(opt);
+      });
+    });
+
+  // When a partner is selected, load their info
+  partnerSelect.addEventListener("change", function() {
+    const dpId = this.value;
+    if (!dpId) return;
+  
+    fetch(`https://script.google.com/macros/s/AKfycbyP_NArs1NwZ5LOwjR0Y2-UmpcHAXF25eaBWJ5gXfYuHSsc213PK_kEBQRYpMvCkko/exec?getPartnerData=${dpId}`)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("data_partner_name").value = data.data_partner_name || "";
+        document.getElementById("acronym").value = data.acronym || "";
+        document.getElementById("website").value = data.website || "";
+        document.getElementById("contact").value = data.contact || "";
+        document.getElementById("description").value = data.description || "";
+        document.getElementById("latitude").value = data.latitude || "";
+        document.getElementById("longitude").value = data.longitude || "";
+        document.getElementById("rowId").value = dpId; // Set the row ID correctly
+      });
+  });
+
+  // Handle form submission
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    fetch("https://script.google.com/macros/s/AKfycbyP_NArs1NwZ5LOwjR0Y2-UmpcHAXF25eaBWJ5gXfYuHSsc213PK_kEBQRYpMvCkko/exec", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+      if (result.toLowerCase().includes("success")) {
+        document.getElementById("edit-confirmation-message").style.display = "block";
+      } else {
+        alert("Something went wrong: " + result);
+      }
+    })
+    .catch(error => {
+      alert("Submission failed. Please try again.");
+      console.error("Error:", error);
+    });
+  });
+</script>
+```

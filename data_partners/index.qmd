@@ -1,0 +1,30 @@
+## Data partners
+
+```{r, echo=FALSE, message=FALSE, results='asis'}
+x <- "https://docs.google.com/spreadsheets/d/1ojn50In5Knkcak5Dw-OO8dwzGQqHziBXkCLV-Q-US14/export?format=csv" |>
+  readr::read_csv(show_col_types = FALSE)
+
+for (k in seq_len(nrow(x))) {
+  if (!is.na(x$data_partner_name[k])) {
+    if (!is.na(x$acronym[k])) {
+      cat(paste0("### ", x$data_partner_name[k], " (", x$acronym[k], ")\n\n"))
+    } else {
+      cat(paste0("### ", x$data_partner_name[k], "\n\n"))
+    }
+    if (!is.na(x$description[k])) {
+      cat(paste0(x$description[k], "\n\n"))
+    }
+    if (!is.na(x$contact[k])) {
+      cat(paste0("* **Contact**: [", x$contact[k], "](mailto:", x$contact[k], ")\n"))
+    }
+    if (!is.na(x$website[k])) {
+      cat(paste0("* **Website**: [", x$website[k], "](", x$website[k], ")\n"))
+    }
+    cat("\n")
+  }
+}
+```
+
+## Add/Edit data partners
+
+Please use the following links to: [modify](edit.qmd) or [create](new.qmd) a data partner.
