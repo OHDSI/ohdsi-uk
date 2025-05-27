@@ -14,6 +14,16 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            gdal-bin \
+            libgdal-dev \
+            libpng-dev \
+            libx11-dev \
+            pandoc
+
       - name: Install R
         uses: r-lib/actions/setup-r@v2
 
