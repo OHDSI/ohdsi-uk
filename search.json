@@ -14,6 +14,90 @@
     "text": "5-7 July 2025 OHDSI Europe 2025\n26 September 2025 OHDSI UK 2025"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "The United Kingdom has more than 20 Data Partners in the EHDEN network and several EHDEN-certified SMEs. The UK scientific network is dynamic and research active, with numerous initiatives in the fields of health informatics, health data sciences, pharmacoepidemiology, and related areas.\nMany UK partners have made substantial contributions to recent EHDEN- and OHDSI-sponsored research, and key national players like Health Data Research UK and the National Institute for Health and Care Excellence (NICE) are increasingly interested in the use of OMOP for federated analytics nationally.\n\n\n\nThe aims of the UK national node include:\n\nTo adopt OHDSI’s mission, vision, and values\nTo facilitate the coordination of national members at a national and international level with OHDSI and EHDEN partners\nTo promote the OHDSI mission in the UK in collaboration with relevant national stakeholders including academia, healthcare organizations, HTA agencies, regulators, patient organizations, policy makers, clinical guideline developers and pharmaceutical and life science industry\nTo initiate and/or collaborate in relevant national research collaborations and co-ordination with European and global OHDSI initiatives\nTo organize training programs in the field of Health Data Sciences and related areas\nTo engage with the European and global OHDSI leadership\n\n\n\n\nHealth Data Sciences Section, Botnar Research Centre, University of Oxford\n\n\n\nThe node currently has 26 collaborators, you can find more information about each one of them in Collaborators. See them located in this map:\n\n\n\n\n\n\n\n\n\nAny UK-based institution interested to join the UK OHDSI Node should get in touch with the coordinator: prietoalhambra@ohdsi.org"
+  },
+  {
+    "objectID": "index.html#ohdsi-uk",
+    "href": "index.html#ohdsi-uk",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "The United Kingdom has more than 20 Data Partners in the EHDEN network and several EHDEN-certified SMEs. The UK scientific network is dynamic and research active, with numerous initiatives in the fields of health informatics, health data sciences, pharmacoepidemiology, and related areas.\nMany UK partners have made substantial contributions to recent EHDEN- and OHDSI-sponsored research, and key national players like Health Data Research UK and the National Institute for Health and Care Excellence (NICE) are increasingly interested in the use of OMOP for federated analytics nationally.\n\n\n\nThe aims of the UK national node include:\n\nTo adopt OHDSI’s mission, vision, and values\nTo facilitate the coordination of national members at a national and international level with OHDSI and EHDEN partners\nTo promote the OHDSI mission in the UK in collaboration with relevant national stakeholders including academia, healthcare organizations, HTA agencies, regulators, patient organizations, policy makers, clinical guideline developers and pharmaceutical and life science industry\nTo initiate and/or collaborate in relevant national research collaborations and co-ordination with European and global OHDSI initiatives\nTo organize training programs in the field of Health Data Sciences and related areas\nTo engage with the European and global OHDSI leadership\n\n\n\n\nHealth Data Sciences Section, Botnar Research Centre, University of Oxford\n\n\n\nThe node currently has 26 collaborators, you can find more information about each one of them in Collaborators. See them located in this map:\n\n\n\n\n\n\n\n\n\nAny UK-based institution interested to join the UK OHDSI Node should get in touch with the coordinator: prietoalhambra@ohdsi.org"
+  },
+  {
+    "objectID": "new_to_ohdsi.html",
+    "href": "new_to_ohdsi.html",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "New to OHDSI"
+  },
+  {
+    "objectID": "new_to_ohdsi.html#new-to-ohdsi",
+    "href": "new_to_ohdsi.html#new-to-ohdsi",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "New to OHDSI"
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "Contributing to the OHDSI UK Website",
+    "section": "",
+    "text": "Thank you for your interest in contributing to the OHDSI UK website!\nThis site is built using Quarto and automatically deployed via GitHub Actions to GitHub Pages.\n\n\nTo contribute, you’ll need the following installed locally:\n\nQuarto CLI\nR\nGit or GitHub Desktop for a user-friendly interface\n\nYou can edit the code using any Integrated Development Environment that supports Quarto (e.g. RStudio, Positron, VS Code, or JupyterLab).\nWe recommend using RStudio as the repository includes a .Rproj file to simplify your workflow.\n\n\n\n\n\nBefore starting, we encourage you to open an issue to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project’s direction.\nWhile pull requests (PRs) are always welcome, we can’t guarantee that all will be accepted — starting a discussion increases the chances your work will be merged.\n\n\n\n\n\n\n\n\n\nAfter editing content or code, you can preview the website locally:\nquarto preview\nThis will start a live preview server where you can see your changes.\nOnce you’re satisfied commit them to Github.\n\n\n\nPush your branch and open a Pull Request (PR).\n💡 If the GitHub Actions check fails and you’re unsure why, just leave a comment in the PR and a maintainer will assist.\n\n\n\nAsk a maintainer to review your changes.\n\n\n\n\nYou do not need to manually render or deploy the website.\nWhen changes are merged into the main branch:\n\nA GitHub Action renders the site using Quarto.\nThe rendered output is automatically deployed to GitHub Pages.\n\n\n\n\n\nUse Quarto Markdown syntax.\nKeep filenames lowercase and use underscores (_) rather than spaces.\nUse relative links to other pages (e.g., resources.qmd, not absolute URLs).\nPlace images in the images/ folder and optimize them for web use.\n\n\n\n\nPlease be respectful and professional in your interactions. See our CODE_OF_CONDUCT.md for details.\nThank you for contributing! 🎉"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#project-setup",
+    "href": "CONTRIBUTING.html#project-setup",
+    "title": "Contributing to the OHDSI UK Website",
+    "section": "",
+    "text": "To contribute, you’ll need the following installed locally:\n\nQuarto CLI\nR\nGit or GitHub Desktop for a user-friendly interface\n\nYou can edit the code using any Integrated Development Environment that supports Quarto (e.g. RStudio, Positron, VS Code, or JupyterLab).\nWe recommend using RStudio as the repository includes a .Rproj file to simplify your workflow."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#how-to-contribute",
+    "href": "CONTRIBUTING.html#how-to-contribute",
+    "title": "Contributing to the OHDSI UK Website",
+    "section": "",
+    "text": "Before starting, we encourage you to open an issue to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project’s direction.\nWhile pull requests (PRs) are always welcome, we can’t guarantee that all will be accepted — starting a discussion increases the chances your work will be merged.\n\n\n\n\n\n\n\n\n\nAfter editing content or code, you can preview the website locally:\nquarto preview\nThis will start a live preview server where you can see your changes.\nOnce you’re satisfied commit them to Github.\n\n\n\nPush your branch and open a Pull Request (PR).\n💡 If the GitHub Actions check fails and you’re unsure why, just leave a comment in the PR and a maintainer will assist.\n\n\n\nAsk a maintainer to review your changes."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#website-deployment",
+    "href": "CONTRIBUTING.html#website-deployment",
+    "title": "Contributing to the OHDSI UK Website",
+    "section": "",
+    "text": "You do not need to manually render or deploy the website.\nWhen changes are merged into the main branch:\n\nA GitHub Action renders the site using Quarto.\nThe rendered output is automatically deployed to GitHub Pages."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#style-and-content-guidelines",
+    "href": "CONTRIBUTING.html#style-and-content-guidelines",
+    "title": "Contributing to the OHDSI UK Website",
+    "section": "",
+    "text": "Use Quarto Markdown syntax.\nKeep filenames lowercase and use underscores (_) rather than spaces.\nUse relative links to other pages (e.g., resources.qmd, not absolute URLs).\nPlace images in the images/ folder and optimize them for web use."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#code-of-conduct",
+    "href": "CONTRIBUTING.html#code-of-conduct",
+    "title": "Contributing to the OHDSI UK Website",
+    "section": "",
+    "text": "Please be respectful and professional in your interactions. See our CODE_OF_CONDUCT.md for details.\nThank you for contributing! 🎉"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
+  },
+  {
+    "objectID": "resources.html#resources",
+    "href": "resources.html#resources",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
+  },
+  {
     "objectID": "CODE_OF_CONDUCT.html",
     "href": "CODE_OF_CONDUCT.html",
     "title": "Contributor Covenant Code of Conduct",
@@ -70,136 +154,24 @@
     "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
+    "objectID": "collaborators.html",
+    "href": "collaborators.html",
     "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
     "section": "",
-    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
+    "text": "Contact: daniel.prietoalhambra@ndorms.ox.ac.uk;\nWebsite: https://www.ndorms.ox.ac.uk/research/research-groups/Musculoskeletal-Pharmacoepidemiology; https://oxford-pharmacoepi.github.io/Oxinfer/\n\nOur research is focused on the understanding of the safety and effectiveness of new and long-licensed medications and devices. We are particularly interested in studying both the benefits and the potential risks of the use of such therapies in special subgroups of the population that were under-represented in previous clinical trials. The group also develops and maintains several R packages widely used on the OHDSI community."
   },
   {
-    "objectID": "resources.html#resources",
-    "href": "resources.html#resources",
+    "objectID": "collaborators.html#ohdsi-uk-collaborators",
+    "href": "collaborators.html#ohdsi-uk-collaborators",
     "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
     "section": "",
-    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
+    "text": "Contact: daniel.prietoalhambra@ndorms.ox.ac.uk;\nWebsite: https://www.ndorms.ox.ac.uk/research/research-groups/Musculoskeletal-Pharmacoepidemiology; https://oxford-pharmacoepi.github.io/Oxinfer/\n\nOur research is focused on the understanding of the safety and effectiveness of new and long-licensed medications and devices. We are particularly interested in studying both the benefits and the potential risks of the use of such therapies in special subgroups of the population that were under-represented in previous clinical trials. The group also develops and maintains several R packages widely used on the OHDSI community."
   },
   {
-    "objectID": "data_partners/new.html",
-    "href": "data_partners/new.html",
+    "objectID": "collaborators.html#become-a-collaborator",
+    "href": "collaborators.html#become-a-collaborator",
     "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "Please provide the following needed information to display a new data partner:\n\n\n\n  \n\n  Data Partner Name:*\n  \n\n  Acronym (max 10 characters):\n  \n\n  Website:*\n  \n\n  Contact Email:*\n  \n\n  Description (max 800 characters):\n  \n\n  Latitude and Longitude to display in the data partners map:\n  \n    \n    \n  \n  \n  * Compulsory\n  \n  \n\n\n\n\n  ✔ Data submitted correctly, new data partner should appear on the website in the next 24 hours!"
-  },
-  {
-    "objectID": "data_partners/new.html#new-data-partner",
-    "href": "data_partners/new.html#new-data-partner",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "Please provide the following needed information to display a new data partner:\n\n\n\n  \n\n  Data Partner Name:*\n  \n\n  Acronym (max 10 characters):\n  \n\n  Website:*\n  \n\n  Contact Email:*\n  \n\n  Description (max 800 characters):\n  \n\n  Latitude and Longitude to display in the data partners map:\n  \n    \n    \n  \n  \n  * Compulsory\n  \n  \n\n\n\n\n  ✔ Data submitted correctly, new data partner should appear on the website in the next 24 hours!"
-  },
-  {
-    "objectID": "data_partners/edit.html",
-    "href": "data_partners/edit.html",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "Select Data Partner to Edit:\n  \n    -- Choose a Data Partner --\n  \n\n  Name of Data Partner:\n  \n\n  Acronym (max 10 characters):\n  \n\n  Website:*\n  \n\n  Contact Email:*\n  \n\n  Description (max 800 characters):\n  \n\n  Latitude and Longitude:\n  \n    \n    \n  \n  \n\n  * Compulsory\n  \n  \n\n\n\n  ✔ Data submitted correctly! Updated data partner should appear on the website in the next 24 hours."
-  },
-  {
-    "objectID": "data_partners/edit.html#edit-data-partner",
-    "href": "data_partners/edit.html#edit-data-partner",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "Select Data Partner to Edit:\n  \n    -- Choose a Data Partner --\n  \n\n  Name of Data Partner:\n  \n\n  Acronym (max 10 characters):\n  \n\n  Website:*\n  \n\n  Contact Email:*\n  \n\n  Description (max 800 characters):\n  \n\n  Latitude and Longitude:\n  \n    \n    \n  \n  \n\n  * Compulsory\n  \n  \n\n\n\n  ✔ Data submitted correctly! Updated data partner should appear on the website in the next 24 hours."
-  },
-  {
-    "objectID": "data_partners/index.html",
-    "href": "data_partners/index.html",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "Website: https://akriviahealth.com\n\n\n\n\n\n\n\n\nWebsite: https://www.bartshealth.nhs.uk\n\n\n\n\n\n\n\n\n\n\n\nWebsite: https://www.cprd.com\n\n\n\n\n\nWebsite: https://caer.org.uk\n\n\n\n\n\n\n\n\n\n\n\nWebsite: https://www.gosh.org\n\n\n\n\n\n\n\n\nWebsite: https://www.kcl.ac.uk/slcps\n\n\n\n\n\n\n\n\nWebsite: https://www.leedsth.nhs.uk\n\n\n\n\n\nWebsite: https://www.ohdsi-europe.org/index.php/national-nodes/uk\n\n\n\n\n\n\n\n\nWebsite: https://www.optimumpatientcare.org\n\n\n\n\n\nWebsite: https://www.qmul.ac.uk\n\n\n\n\n\nWebsite: https://www.imperial.ac.uk/neonatal-data-analysis-unit/neonatal-data-analysis-unit/\n\n\n\n\n\nWebsite: https://www.ucl.ac.uk\n\n\n\n\n\nWebsite: https://www.uclh.nhs.uk\n\n\n\n\n\nWebsite: https://www.dundee.ac.uk/hic"
-  },
-  {
-    "objectID": "data_partners/index.html#data-partners",
-    "href": "data_partners/index.html#data-partners",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "Website: https://akriviahealth.com\n\n\n\n\n\n\n\n\nWebsite: https://www.bartshealth.nhs.uk\n\n\n\n\n\n\n\n\n\n\n\nWebsite: https://www.cprd.com\n\n\n\n\n\nWebsite: https://caer.org.uk\n\n\n\n\n\n\n\n\n\n\n\nWebsite: https://www.gosh.org\n\n\n\n\n\n\n\n\nWebsite: https://www.kcl.ac.uk/slcps\n\n\n\n\n\n\n\n\nWebsite: https://www.leedsth.nhs.uk\n\n\n\n\n\nWebsite: https://www.ohdsi-europe.org/index.php/national-nodes/uk\n\n\n\n\n\n\n\n\nWebsite: https://www.optimumpatientcare.org\n\n\n\n\n\nWebsite: https://www.qmul.ac.uk\n\n\n\n\n\nWebsite: https://www.imperial.ac.uk/neonatal-data-analysis-unit/neonatal-data-analysis-unit/\n\n\n\n\n\nWebsite: https://www.ucl.ac.uk\n\n\n\n\n\nWebsite: https://www.uclh.nhs.uk\n\n\n\n\n\nWebsite: https://www.dundee.ac.uk/hic"
-  },
-  {
-    "objectID": "data_partners/index.html#addedit-data-partners",
-    "href": "data_partners/index.html#addedit-data-partners",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "Add/Edit data partners",
-    "text": "Add/Edit data partners\nPlease use the following links to: modify or create a data partner."
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "Contributing to the OHDSI UK Website",
-    "section": "",
-    "text": "Thank you for your interest in contributing to the OHDSI UK website!\nThis site is built using Quarto and automatically deployed via GitHub Actions to GitHub Pages.\n\n\nTo contribute, you’ll need the following installed locally:\n\nQuarto CLI\nR\nGit or GitHub Desktop for a user-friendly interface\n\nYou can edit the code using any Integrated Development Environment that supports Quarto (e.g. RStudio, Positron, VS Code, or JupyterLab).\nWe recommend using RStudio as the repository includes a .Rproj file to simplify your workflow.\n\n\n\n\n\nBefore starting, we encourage you to open an issue to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project’s direction.\nWhile pull requests (PRs) are always welcome, we can’t guarantee that all will be accepted — starting a discussion increases the chances your work will be merged.\n\n\n\n\n\n\n\n\n\nAfter editing content or code, you can preview the website locally:\nquarto preview\nThis will start a live preview server where you can see your changes.\nOnce you’re satisfied commit them to Github.\n\n\n\nPush your branch and open a Pull Request (PR).\n💡 If the GitHub Actions check fails and you’re unsure why, just leave a comment in the PR and a maintainer will assist.\n\n\n\nAsk a maintainer to review your changes.\n\n\n\n\nYou do not need to manually render or deploy the website.\nWhen changes are merged into the main branch:\n\nA GitHub Action renders the site using Quarto.\nThe rendered output is automatically deployed to GitHub Pages.\n\n\n\n\n\nUse Quarto Markdown syntax.\nKeep filenames lowercase and use underscores (_) rather than spaces.\nUse relative links to other pages (e.g., resources.qmd, not absolute URLs).\nPlace images in the images/ folder and optimize them for web use.\n\n\n\n\nPlease be respectful and professional in your interactions. See our CODE_OF_CONDUCT.md for details.\nThank you for contributing! 🎉"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#project-setup",
-    "href": "CONTRIBUTING.html#project-setup",
-    "title": "Contributing to the OHDSI UK Website",
-    "section": "",
-    "text": "To contribute, you’ll need the following installed locally:\n\nQuarto CLI\nR\nGit or GitHub Desktop for a user-friendly interface\n\nYou can edit the code using any Integrated Development Environment that supports Quarto (e.g. RStudio, Positron, VS Code, or JupyterLab).\nWe recommend using RStudio as the repository includes a .Rproj file to simplify your workflow."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#how-to-contribute",
-    "href": "CONTRIBUTING.html#how-to-contribute",
-    "title": "Contributing to the OHDSI UK Website",
-    "section": "",
-    "text": "Before starting, we encourage you to open an issue to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project’s direction.\nWhile pull requests (PRs) are always welcome, we can’t guarantee that all will be accepted — starting a discussion increases the chances your work will be merged.\n\n\n\n\n\n\n\n\n\nAfter editing content or code, you can preview the website locally:\nquarto preview\nThis will start a live preview server where you can see your changes.\nOnce you’re satisfied commit them to Github.\n\n\n\nPush your branch and open a Pull Request (PR).\n💡 If the GitHub Actions check fails and you’re unsure why, just leave a comment in the PR and a maintainer will assist.\n\n\n\nAsk a maintainer to review your changes."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#website-deployment",
-    "href": "CONTRIBUTING.html#website-deployment",
-    "title": "Contributing to the OHDSI UK Website",
-    "section": "",
-    "text": "You do not need to manually render or deploy the website.\nWhen changes are merged into the main branch:\n\nA GitHub Action renders the site using Quarto.\nThe rendered output is automatically deployed to GitHub Pages."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#style-and-content-guidelines",
-    "href": "CONTRIBUTING.html#style-and-content-guidelines",
-    "title": "Contributing to the OHDSI UK Website",
-    "section": "",
-    "text": "Use Quarto Markdown syntax.\nKeep filenames lowercase and use underscores (_) rather than spaces.\nUse relative links to other pages (e.g., resources.qmd, not absolute URLs).\nPlace images in the images/ folder and optimize them for web use."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#code-of-conduct",
-    "href": "CONTRIBUTING.html#code-of-conduct",
-    "title": "Contributing to the OHDSI UK Website",
-    "section": "",
-    "text": "Please be respectful and professional in your interactions. See our CODE_OF_CONDUCT.md for details.\nThank you for contributing! 🎉"
-  },
-  {
-    "objectID": "new_to_ohdsi.html",
-    "href": "new_to_ohdsi.html",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "New to OHDSI"
-  },
-  {
-    "objectID": "new_to_ohdsi.html#new-to-ohdsi",
-    "href": "new_to_ohdsi.html#new-to-ohdsi",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "New to OHDSI"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "The United Kingdom has more than 20 Data Partners in the EHDEN network and several EHDEN-certified SMEs. The UK scientific network is dynamic and research active, with numerous initiatives in the fields of health informatics, health data sciences, pharmacoepidemiology, and related areas.\nMany UK partners have made substantial contributions to recent EHDEN- and OHDSI-sponsored research, and key national players like Health Data Research UK and the National Institute for Health and Care Excellence (NICE) are increasingly interested in the use of OMOP for federated analytics nationally.\n\n\n\nThe aims of the UK national node include:\n\nTo adopt OHDSI’s mission, vision, and values\nTo facilitate the coordination of national members at a national and international level with OHDSI and EHDEN partners\nTo promote the OHDSI mission in the UK in collaboration with relevant national stakeholders including academia, healthcare organizations, HTA agencies, regulators, patient organizations, policy makers, clinical guideline developers and pharmaceutical and life science industry\nTo initiate and/or collaborate in relevant national research collaborations and co-ordination with European and global OHDSI initiatives\nTo organize training programs in the field of Health Data Sciences and related areas\nTo engage with the European and global OHDSI leadership\n\n\n\n\nHealth Data Sciences Section, Botnar Research Centre, University of Oxford\n\n\n\nThe node currently has 26 data partners, you can find more information about each one of them in Data Partners. See them located in this map:\n\n\n\n\n\n\n\n\n\nAny UK-based institution interested to join the UK OHDSI Node should get in touch with the coordinator: prietoalhambra@ohdsi.org"
-  },
-  {
-    "objectID": "index.html#ohdsi-uk",
-    "href": "index.html#ohdsi-uk",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "The United Kingdom has more than 20 Data Partners in the EHDEN network and several EHDEN-certified SMEs. The UK scientific network is dynamic and research active, with numerous initiatives in the fields of health informatics, health data sciences, pharmacoepidemiology, and related areas.\nMany UK partners have made substantial contributions to recent EHDEN- and OHDSI-sponsored research, and key national players like Health Data Research UK and the National Institute for Health and Care Excellence (NICE) are increasingly interested in the use of OMOP for federated analytics nationally.\n\n\n\nThe aims of the UK national node include:\n\nTo adopt OHDSI’s mission, vision, and values\nTo facilitate the coordination of national members at a national and international level with OHDSI and EHDEN partners\nTo promote the OHDSI mission in the UK in collaboration with relevant national stakeholders including academia, healthcare organizations, HTA agencies, regulators, patient organizations, policy makers, clinical guideline developers and pharmaceutical and life science industry\nTo initiate and/or collaborate in relevant national research collaborations and co-ordination with European and global OHDSI initiatives\nTo organize training programs in the field of Health Data Sciences and related areas\nTo engage with the European and global OHDSI leadership\n\n\n\n\nHealth Data Sciences Section, Botnar Research Centre, University of Oxford\n\n\n\nThe node currently has 26 data partners, you can find more information about each one of them in Data Partners. See them located in this map:\n\n\n\n\n\n\n\n\n\nAny UK-based institution interested to join the UK OHDSI Node should get in touch with the coordinator: prietoalhambra@ohdsi.org"
+    "section": "Become a collaborator",
+    "text": "Become a collaborator\nJoin our mail list and become a collaborator telling about us: Fill out this form."
   }
 ]
