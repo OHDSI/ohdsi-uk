@@ -1,6 +1,6 @@
 # ohdsi-uk
 
-This repository contains the source code for the OHDSI UK website: <https://oxford-pharmacoepi.github.io/ohdsi-uk/>.
+This repository contains the source code for the OHDSI UK website: <https://ohdsi.github.io/ohdsi-uk/>.
  
 ## 🤝 Contributing
 
