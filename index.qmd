@@ -22,7 +22,7 @@ The aims of the UK national node include:
 
 Health Data Sciences Section, Botnar Research Centre, University of Oxford
 
-### Members and Data Partners 
+### Collaborators
 
 ```{r, echo=FALSE, message=FALSE}
 x <- "https://docs.google.com/spreadsheets/d/1ojn50In5Knkcak5Dw-OO8dwzGQqHziBXkCLV-Q-US14/export?format=csv" |>
@@ -31,7 +31,7 @@ x <- "https://docs.google.com/spreadsheets/d/1ojn50In5Knkcak5Dw-OO8dwzGQqHziBXkC
   dplyr::mutate(dplyr::across(c("longitude", "latitude"), \(x) as.numeric(gsub(",", ".", x))))
 ```
 
-The node currently has `r nrow(x)` data partners, you can find more information about each one of them in [Data Partners](data_partners/index.qmd). See them located in this map:
+The node currently has `r nrow(x)` collaborators, you can find more information about each one of them in [Collaborators](collaborators.qmd). See them located in this map:
 
 ```{r, echo=FALSE}
 x |>

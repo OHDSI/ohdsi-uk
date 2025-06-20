@@ -1,0 +1,35 @@
+## OHDSI UK Collaborators
+
+```{r, echo=FALSE, message=FALSE, results='asis'}
+library(curl)
+x <- "https://docs.google.com/spreadsheets/d/1-cESLADueYT1JN5YBhAvlwGKU9MOwYC5gIXH13mcaHo/export?format=csv" |>
+  readr::read_csv(show_col_types = FALSE)
+colnames(x) <- c("date", "organisation", "email", "email_public", "website", "description", "location", "comments")
+x <- x |>
+  dplyr::arrange(.data$organisation)
+
+for (k in seq_len(nrow(x))) {
+  if (!is.na(x$organisation[k])) {
+    cat(paste0("### ", x$organisation[k], "\n\n"))
+    if (x$email_public[k] == "Yes") {
+      emails <- x$email[k] |>
+        stringr::str_split_1(pattern = "[ ;\n]+") |>
+        purrr::map_chr(\(x) paste0("[", x, "](mailto:", x, ")"))
+      if (length(emails) > 0) {
+        cat(paste0("* **Contact**: ", paste0(emails, "; "), "\n"))
+      }
+    }
+    if (!is.na(x$website[k])) {
+      website <- x$website[k] |>
+        stringr::str_split_1(pattern = "[ ;\n]+") |>
+        purrr::map_chr(\(x) paste0("[", x, "](", x, ")"))
+      cat(paste0("* **Website**: ", paste0(website, collapse = "; "), "\n"))
+    }
+    cat("\n", paste0(x$description[k], "\n\n"))
+  }
+}
+```
+
+## Become a collaborator
+
+Join our mail list and become a collaborator telling about us: [Fill out this form](https://forms.gle/dmrWTFFYDbLeuhZZ8).

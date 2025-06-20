@@ -20,8 +20,8 @@ website:
     left:
       - text: New to ohdsi
         href: new_to_ohdsi.qmd
-      - text: Data Partners
-        href: data_partners/index.qmd
+      - text: Collaborators
+        href: collaborators.qmd
       - text: Events
         href: events.qmd
       - text: Tools
