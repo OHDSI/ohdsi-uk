@@ -16,16 +16,16 @@ for (k in seq_len(nrow(x))) {
         stringr::str_split_1(pattern = "[ ;\n]+") |>
         purrr::map_chr(\(x) paste0("[", x, "](mailto:", x, ")"))
       if (length(emails) > 0) {
-        cat(paste0("* **Contact**: ", paste0(emails, "; "), "\n"))
+        cat(paste0("📬", paste0(emails, collapse = "; "), "\n\n"))
       }
     }
     if (!is.na(x$website[k])) {
       website <- x$website[k] |>
         stringr::str_split_1(pattern = "[ ;\n]+") |>
         purrr::map_chr(\(x) paste0("[", x, "](", x, ")"))
-      cat(paste0("* **Website**: ", paste0(website, collapse = "; "), "\n"))
+      cat(paste0("🌐", paste0(website, collapse = "; "), "\n\n"))
     }
-    cat("\n", paste0(x$description[k], "\n\n"))
+    cat(paste0(x$description[k], "\n\n"))
   }
 }
 ```
