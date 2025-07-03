@@ -7,7 +7,7 @@ website:
   title: "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>"
   favicon: images/logo.png
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
-  repo-url: https://github.com/oxford-pharmacoepi/ohdsi-uk
+  repo-url: https://github.com/ohdsi/ohdsi-uk
   repo-actions: [issue]
   page-footer:
     center: "Rendered on {{< meta date >}}"
@@ -30,7 +30,7 @@ website:
         href: resources.qmd
     right:
       - text: Github
-        href: https://github.com/oxford-pharmacoepi
+        href: https://github.com/ohdsi
         icon: github
 
 format:
