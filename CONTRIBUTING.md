@@ -21,7 +21,7 @@ We recommend using **RStudio** as the repository includes a `.Rproj` file to sim
 
 ### 0. Open an Issue (Recommended)
 
-Before starting, we encourage you to [open an issue](https://github.com/oxford-pharmacoepi/ohdsi-uk/issues) to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project's direction.
+Before starting, we encourage you to [open an issue](https://github.com/ohdsi/ohdsi-uk/issues) to propose your idea or content. This helps avoid duplicated efforts and ensures your contribution aligns with the project's direction.
 
 While pull requests (PRs) are always welcome, we can't guarantee that all will be accepted — starting a discussion increases the chances your work will be merged.
 
