@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
+  },
+  {
+    "objectID": "resources.html#resources",
+    "href": "resources.html#resources",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
@@ -26,6 +40,20 @@
     "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
     "section": "",
     "text": "New to OHDSI"
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "5-7 July 2025 OHDSI Europe 2025\n26 September 2025 OHDSI UK 2025\n7-9 October 2025 OHDSI Global Symposium 2025"
+  },
+  {
+    "objectID": "events.html#events",
+    "href": "events.html#events",
+    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
+    "section": "",
+    "text": "5-7 July 2025 OHDSI Europe 2025\n26 September 2025 OHDSI UK 2025\n7-9 October 2025 OHDSI Global Symposium 2025"
   },
   {
     "objectID": "CONTRIBUTING.html",
@@ -68,34 +96,6 @@
     "title": "Contributing to the OHDSI UK Website",
     "section": "",
     "text": "Please be respectful and professional in your interactions. See our CODE_OF_CONDUCT.md for details.\nThank you for contributing! 🎉"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
-  },
-  {
-    "objectID": "resources.html#resources",
-    "href": "resources.html#resources",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "The Book of OHDSI\nTidy R programming with databases: applications with the OMOP common data model"
-  },
-  {
-    "objectID": "events.html",
-    "href": "events.html",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "5-7 July 2025 OHDSI Europe 2025\n26 September 2025 OHDSI UK 2025\n7-9 October 2025 OHDSI Global Symposium 2025"
-  },
-  {
-    "objectID": "events.html#events",
-    "href": "events.html#events",
-    "title": "<img src='images/logo.png' style='height: 50px; vertical-align: middle;' alt='OHDSI UK logo'>",
-    "section": "",
-    "text": "5-7 July 2025 OHDSI Europe 2025\n26 September 2025 OHDSI UK 2025\n7-9 October 2025 OHDSI Global Symposium 2025"
   },
   {
     "objectID": "collaborators.html",
