@@ -1,8 +1,16 @@
 
 ## Events
 
-- *5-7 July 2025* [**OHDSI Europe 2025**](https://www.ohdsi-europe.org/symposium-event)
+- *17-18 September 2026* [**OHDSI UK 2026**]()
+
+- *20-22 October 2026* [**OHDSI Global Symposium 2026**](https://www.ohdsi.org/ohdsi2026/)
+
+- *18-20 April 2026* [**OHDSI Europe 2026**](https://www.ohdsi-europe.org/index.php/symposium2026)
+
+- *18 March 2026* [**OMOP Special Interest Group 8th meeting**](https://ukhealthdata.org/events/omop-special-interest-group-8th-meeting/)
 
 - *26 September 2025* [**OHDSI UK 2025**](https://ukhealthdata.org/events/ohdsi-uk-2025/)
 
 - *7-9 October 2025* [**OHDSI Global Symposium 2025**](https://www.ohdsi.org/ohdsi2025/)
+
+- *5-7 July 2025* [**OHDSI Europe 2025**](https://www.ohdsi-europe.org/symposium-event)
