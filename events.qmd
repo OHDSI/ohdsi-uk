@@ -1,7 +1,7 @@
 
 ## Events
 
-- *17-18 September 2026* [**OHDSI UK 2026**]()
+- *17-18 September 2026* [**OHDSI UK 2026**](https://ukhealthdata.org/events/ohdsi-uk-2026/)
 
 - *20-22 October 2026* [**OHDSI Global Symposium 2026**](https://www.ohdsi.org/ohdsi2026/)
 
